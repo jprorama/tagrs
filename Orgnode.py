@@ -83,7 +83,7 @@ def makelist(filename):
           bodytext = ""
           tag1 = ""
           alltags = []       # list of all tags in headline
-          tagsrch = re.search('(.*?)\s*:(.*?):(.*?)$',heading)
+          tagsrch = re.search('(.*?)\s*:(\w*?):(\w*?)$',heading)
           if tagsrch:
               heading = tagsrch.group(1)
               tag1 = tagsrch.group(2)
