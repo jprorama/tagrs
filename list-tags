@@ -1,0 +1,14 @@
+#
+# List tags associated with org mode headings
+#
+
+from Orgnode import *
+
+import sys
+filename = sys.argv[1]
+nodelist = makelist(filename)
+
+for node in nodelist:
+  for tag in node.Tags():
+     print tag
+
